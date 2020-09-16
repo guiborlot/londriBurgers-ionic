@@ -1,0 +1,7 @@
+{
+  "name": "LondriBurgers",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
