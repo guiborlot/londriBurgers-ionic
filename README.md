@@ -1,6 +1,6 @@
 # Projeto LondriBurgers
 
-## Para instalar as dependências do projeto:
+## Para instalar as dependências e rodar o projeto:
 
 #### Utilizando o yarn
 ```
