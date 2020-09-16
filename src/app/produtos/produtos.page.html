@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons>
+      <ion-back-button color="light" defaultHref='/tabs/cardapio'></ion-back-button>
+    </ion-buttons>
+    <ion-title>Produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let produto of listaProdutos">
+    <ion-item lines="none" color="light">
+      <ion-thumbnail slot="start">
+        <img src="{{produto.img}}">
+      </ion-thumbnail>      
+      {{produto.nomeProduto}} 
+      <ion-button fill="clear" slot="end" (click)="getCarrinho(produto.nomeProduto, produto.price, produto.img)">
+        <ion-icon color="dark" name="add-circle-outline"></ion-icon>
+      </ion-button>   
+    </ion-item>
+    <ion-item line="full" slot="start">
+      <ion-label>
+        {{produto.price}}
+      </ion-label>
+      <ion-button color="dark" fill="outline" slot="end" [routerLink]="['/detalhesproduto/', produto.id]">
+        Detalhes
+      </ion-button>
+    </ion-item>  
+  </ion-list>
+</ion-content>

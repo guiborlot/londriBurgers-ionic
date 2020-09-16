@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+        <img src="https://i.ibb.co/WzgDtk0/logo.png" alt="logo" height="350px">
+      <ion-item>
+        <ion-input class="card-input" placeholder="Login" type="text" [(ngModel)]="login">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input class="card-input" placeholder="Senha" type="password" [(ngModel)]="senha">
+      </ion-input>
+      </ion-item>
+      <ion-note *ngIf="erro > ''">
+        <p></p>
+        Login ou Senha invalido
+        <p></p>
+      </ion-note>
+      <ion-button expand="full" color="danger" (click)="logar()">Login</ion-button>
+      <ion-button fill="outline" expand="full" color="danger" [routerLink]="['/criar-conta']">Criar conta</ion-button>     
+    </ion-card-content>
+  </ion-card>
+</ion-content>

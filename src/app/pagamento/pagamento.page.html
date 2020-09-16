@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Pagamento</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-label slot="start">
+        Total à pagar
+      </ion-label>
+      <ion-label slot="end">
+        R${{precoTotal}}
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card style="text-align:center;">
+    <ion-item lines="none">
+      <ion-label slot="start">
+        Cupom de desconto:
+      </ion-label>
+      <ion-input [(ngModel)]="codigo" placeholder="Código"></ion-input>
+      <ion-button slot="end" color="light" (click)="aplicarDesconto()">
+        <ion-icon color="dark" name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+  
+  <ion-card>  
+    <ion-list>
+      <ion-radio-group (ionChange)="typeOfPay($event)">
+        <ion-item lines="none">
+          <ion-label>Cartão de Crédito</ion-label>
+          <ion-radio slot="start" value="credito"></ion-radio>
+        </ion-item>
+        <p>{{optionCredito}}</p>
+        <ion-item lines=none>
+          <ion-label>Cartão de Débito</ion-label>
+          <ion-radio slot="start" value="debito"></ion-radio>
+        </ion-item>
+        <p>{{optionDebito}}</p>
+        <ion-item lines="none">
+          <ion-label>Pagar no caixa</ion-label>
+          <ion-radio slot="start" value="caixa"></ion-radio>
+        </ion-item>
+        <p>{{optionCaixa}}</p>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  <ion-item text-center lines="none">
+      <ion-note *ngIf="typeOfPayment == null ">
+        <ion-label>Selecione uma forma de pagamento</ion-label>
+      </ion-note>
+    </ion-item>
+  <ion-button *ngIf="typeOfPayment != null" expand="block" color="danger" (click)="postPedido()" (click)="goToPage()" (click)="resetCarrinho()">
+      Concluir pagamento
+    </ion-button>
+    <ion-button expand="block" color="danger" fill="outline" [routerLink]="['/tabs/cardapio']" routerDirection="back">
+        Continuar comprando
+      </ion-button>
+</ion-content>

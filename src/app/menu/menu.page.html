@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-button (click)="resetCarrinho()" size="small" fill="clear" color="light" routerDirection="back" [routerLink]="['/login']">
+      Logout
+    </ion-button>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+<ion-grid>
+
+  <ion-row align-items-center>
+    <ion-col align-self-center>
+      <img src="https://i.ibb.co/QcYjYwk/banner01.png" alt="banner01" class="burguer" [routerLink]="['/detalhesproduto', 2]">
+    </ion-col>
+  </ion-row>
+  
+  <ion-row text-center>
+
+    <ion-col align-self-center [routerLink]="['/tabs/cupons']">
+      <img id="img1" src="https://i.ibb.co/Tw0PW4D/cupom-desconto.jpg" alt="cupom-desconto">
+    </ion-col>
+    <ion-col>
+      <img id="img2" src="https://i.ibb.co/kxqmGDF/pedido-banner.png" alt="pedido-banner" [routerLink]="['/tabs/cardapio']" alt="">
+    </ion-col>
+
+  </ion-row>
+  <ion-row align-items-center>
+    <ion-col align-self-center>
+      <img src="https://i.ibb.co/Wgq9QWr/promo-batata.jpg" alt="promo-batata" class="burguer" height="150px">
+    </ion-col>
+  </ion-row>
+  
+</ion-grid>
+
+
+
+<!-- <ion-button
+  fill="outline"
+  color="danger" 
+  [routerLink]="['/tabs/cardapio']"
+  expand="block"
+ >Cardápio
+</ion-button>
+<ion-button
+  fill="outline"
+  color="danger" 
+  [routerLink]="['/tabs/cupons']"
+  expand="block"
+ >Cupons
+</ion-button> -->
+
+</ion-content>

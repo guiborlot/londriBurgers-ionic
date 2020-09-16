@@ -1,0 +1,235 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nomeCategoria": "hamburguers",
+      "displayName": "Hamburguers",
+      "avatar": "https://image.flaticon.com/icons/svg/93/93104.svg"
+    },
+    {
+      "id": 2,
+      "nomeCategoria": "batatas",
+      "displayName": "Batatas",
+      "avatar": "https://image.flaticon.com/icons/svg/93/93107.svg"
+    },
+    {
+      "id": 3,
+      "nomeCategoria": "bebidas",
+      "displayName": "Bebidas",
+      "avatar": "https://image.flaticon.com/icons/svg/93/93082.svg"
+    },
+    {
+      "id": 4,
+      "nomeCategoria": "sobremesas",
+      "displayName": "Sobremesas",
+      "avatar": "https://image.flaticon.com/icons/svg/93/93093.svg"
+    },
+    {
+      "id": 5,
+      "nomeCategoria": "pratos",
+      "displayName": "Pratos",
+      "avatar": "https://image.flaticon.com/icons/svg/857/857681.svg"
+    },
+    {
+      "id": 6,
+      "nomeCategoria": "drinks",
+      "displayName": "Drinks",
+      "avatar": "https://image.flaticon.com/icons/svg/931/931898.svg"
+    }
+  ],
+  "hamburguers": [
+    {
+      "nomeProduto": "Londri-Bacon",
+      "price": "R$12.50",
+      "img": "http://i63.tinypic.com/2uj1p8l.png",
+      "detail": "Hambúrguer 200 gramas assado na brasa, pão especial amanteigado, alface, tomate, queijo muçarela, bacon, barbecue e opcional adicionar batata frita ou batata canoa.",
+      "nomeCategoria": "hamburguers",
+      "id": 1
+    },
+    {
+      "nomeProduto": "Londri-Salada",
+      "price": "R$10.50",
+      "img": "http://i68.tinypic.com/2wqz9qv.jpg",
+      "detail": "Hambúrguer 200 gramas assado na brasa, pão especial amanteigado, alface, tomate, queijo muçarela, barbecue e opcional adicionar batata frita ou batata canoa.",
+      "nomeCategoria": "hamburguers",
+      "id": 2
+    },
+    {
+      "nomeProduto": "Londri-Egg",
+      "price": "R$11.50",
+      "img": "http://i66.tinypic.com/2hfjltv.jpg",
+      "detail": "Hambúrguer 200 gramas assado na brasa, pão especial amanteigado, alface, tomate, queijo muçarela, ovo, barbecue e opcional adicionar batata frita ou batata canoa.",
+      "nomeCategoria": "hamburguers",
+      "id": 3
+    },
+    {
+      "nomeProduto": "Londri-Tudo",
+      "price": "R$16.50",
+      "img": "http://i67.tinypic.com/23rmz3l.jpg",
+      "detail": "Hambúrguer 200 gramas assado na brasa, pão especial amanteigado, alface, tomate, queijo muçarela, ovo, barbecue e opcional adicionar batata frita ou batata canoa, VEM TUDO!",
+      "nomeCategoria": "hamburguers",
+      "id": 4
+    },
+    {
+      "nomeProduto": "Londri-BIG",
+      "price": "R$17.50",
+      "img": "http://i68.tinypic.com/kd4p5f.png",
+      "detail": "Maior hamburguer que você já comeu!",
+      "nomeCategoria": "hamburguers",
+      "id": 5
+    }
+  ],
+  "batatas": [
+    {
+      "id": 1,
+      "nomeProduto": "Batata média",
+      "price": "R$7.50",
+      "img": "https://cdn.awsli.com.br/600x1000/509/509824/produto/19022711/8daae13c8e.jpg",
+      "detail": "150g de Batata acompanhada de molhos especiais da casa",
+      "categoriaId": 2
+    },
+    {
+      "id": 2,
+      "nomeProduto": "Batata grande",
+      "price": "R$9.50",
+      "img": "https://cdn.awsli.com.br/600x1000/509/509824/produto/19022711/8daae13c8e.jpg",
+      "detail": "250g de Batata acompanhada de molhos especiais da casa",
+      "categoriaId": 2
+    },
+    {
+      "id": 3,
+      "nomeProduto": "Batata família",
+      "price": "R$11.50",
+      "img": "https://cdn.awsli.com.br/600x1000/509/509824/produto/19022711/8daae13c8e.jpg",
+      "detail": "450g de Batata acompanhada de molhos especiais da casa",
+      "categoriaId": 2
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 1,
+      "nomeProduto": "Refrigerante",
+      "price": "R$4.50",
+      "img": "https://www.sushimanscwb.com.br/wp-content/uploads/1579_REFRIGERANTE_LATA_-_350ml_17d2e336feb44a2696fd6cf852c41b50-1.jpeg",
+      "categoriaId": 3
+    },
+    {
+      "id": 2,
+      "nomeProduto": "Suco natural",
+      "price": "R$6.50",
+      "img": "https://http2.mlstatic.com/espremedor-fruta-sucos-natural-profissional-extrator-de-suco-S_983525-MLB25459284738_032017-F.jpg",
+      "categoriaId": 3
+    }
+  ],
+  "sobremesas": [
+    {
+      "id": 1,
+      "nomeProduto": "Petit gateau",
+      "price": "R$12.50",
+      "img": "https://img.itdg.com.br/images/recipes/000/067/020/13085/13085_original.jpg",
+      "detail": "Bolinho mal passado feito com chocolate de qualidade e servido quente com uma bola de sorvete de baunilha",
+      "categoriaId": 4
+    },
+    {
+      "id": 2,
+      "nomeProduto": "Churros",
+      "price": "R$12.50",
+      "img": "https://i.pinimg.com/originals/ab/40/eb/ab40ebfed606fe9dbbcb3dfd7cdfb98c.jpg",
+      "detail": "Massa de churros preparada na hora, envolta de açúcar e canela.",
+      "categoriaId": 4
+    }
+  ],
+  "pratos": [
+    {
+      "id": 1,
+      "nomeProduto": "Londri-Pf Frango",
+      "price": "R$19.50",
+      "img": "https://aimg.comendo.com.br/produtos/1000/161126210019583a1403ef308.jpg",
+      "detail": "Prato Feito Saudavel, comida de casa em uma versão Fit e Funcional, Arroz, Feijão, Filé de Frango e Farofa Funcional.",
+      "categoriaId": 5
+    },
+    {
+      "id": 2,
+      "nomeProduto": "Londri-Pf Mignon",
+      "price": "R$22.50",
+      "img": "http://re.i.uol.com.br/album/PF_pratofeito_f_006.jpg",
+      "detail": "Prato Feito Saudavel, comida de casa em uma versão Fit e Funcional, Arroz, Feijão, Filé Mignon e Farofa Funcional.",
+      "categoriaId": 5
+    }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "nomeProduto": "Chopp 350ml",
+      "price": "R$5.50",
+      "img": "http://www.fattoentretenimento.com.br/wp-content/uploads/2019/01/delivery-de-chopp-curitiba.jpg",
+      "detail": "Chopp Pilsen.",
+      "categoriaId": 6
+    },
+    {
+      "id": 2,
+      "nomeProduto": "Chopp 500ml",
+      "price": "R$7.50",
+      "img": "http://www.fattoentretenimento.com.br/wp-content/uploads/2019/01/delivery-de-chopp-curitiba.jpg",
+      "detail": "Chopp Pilsen.",
+      "categoriaId": 6
+    }
+  ],
+  "cupons": [
+    {
+      "nameCupom": "5% em todas as compras",
+      "price": "5",
+      "img": "http://i63.tinypic.com/17r0d5.png",
+      "detail": "5% de desconto em todas as compras.",
+      "code": "5PORCENTO",
+      "id": 4
+    },
+    {
+      "nameCupom": "10% de desconto em tudo!!!",
+      "price": "10",
+      "img": "http://i68.tinypic.com/2n1gtq0.png",
+      "detail": "10% de desconto para todas as compras realizadas pelo APP!",
+      "code": "10EMTUDO",
+      "id": 5
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "login": "admin",
+      "senha": "admin"
+    },
+    {
+      "id": 2,
+      "login": "login",
+      "senha": "login"
+    }
+  ],
+  "carrinho": [
+    {
+      "id": 1,
+      "nomeProduto": "Londri-Bacon",
+      "price": "R$12.50",
+      "img": "http://i63.tinypic.com/2uj1p8l.png"
+    },
+    {
+      "id": 2,
+      "nomeProduto": "Petit gateau",
+      "price": "R$12.50",
+      "img": "https://img.itdg.com.br/images/recipes/000/067/020/13085/13085_original.jpg"
+    },
+    {
+      "id": 3,
+      "nomeProduto": "Londri-Pf Frango",
+      "price": "R$19.50",
+      "img": "https://aimg.comendo.com.br/produtos/1000/161126210019583a1403ef308.jpg"
+    },
+    {
+      "id": 4,
+      "nomeProduto": "Suco natural",
+      "price": "R$6.50",
+      "img": "https://http2.mlstatic.com/espremedor-fruta-sucos-natural-profissional-extrator-de-suco-S_983525-MLB25459284738_032017-F.jpg"
+    }
+  ],
+  "pedidos": []
+}

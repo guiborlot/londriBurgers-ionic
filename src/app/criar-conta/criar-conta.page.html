@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-back-button color="light" defaultHref = "/menu"></ion-back-button>
+    <ion-title>Crie sua conta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <ion-card>
+  <p style="text-align: center;">Digite seu login</p>
+    <ion-input [(ngModel)]="login" placeholder="Login"></ion-input>
+  </ion-card>  
+    <p></p>
+    
+    <ion-card>
+    <p style="text-align: center;">Digite sua senha</p>
+    <ion-input [(ngModel)]="senha"placeholder="Senha" type="password"></ion-input>
+    
+    <ion-input [(ngModel)]="outraSenha"placeholder="Repetir senha" type="password"></ion-input>
+  </ion-card>
+  <ion-note *ngIf="erro > ''">
+      <p></p>
+      As senhas não combinam
+      <p></p>
+    </ion-note>
+</ion-list>
+  
+  <ion-button color="danger"  expand="full" (click)="criarConta()">Criar Conta</ion-button>
+  <ion-button fill="outline" expand="full" color="danger" routerLink="/login">Cancelar</ion-button>
+</ion-content>

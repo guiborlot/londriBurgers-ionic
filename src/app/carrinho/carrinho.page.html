@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons>
+      <ion-back-button color="light" defaultHref='tabs/cardapio'></ion-back-button>
+    </ion-buttons>
+    <ion-title>Carrinho</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let item of listaCarrinho">
+      <ion-item line="full" color="light">
+          <ion-thumbnail slot="start">
+            <img src="{{item.img}}">
+          </ion-thumbnail>      
+          {{item.nomeProduto}} 
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            {{item.price}}
+          </ion-label>
+            <ion-button color="dark" fill="outline" slot="end" (click)="apagarItem(item.id)">
+                Excluir
+            </ion-button>  
+        </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <p>Total a pagar: R${{precoTotal}}</p>
+      <ion-button *ngIf="precoTotal != 0" slot="end" color="danger" [routerLink]="['/pagamento']">Efetuar Pagamento</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+    
+
+
+

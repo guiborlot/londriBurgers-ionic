@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons>
+      <ion-back-button defaultHref="/cupons" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cupom</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card>
+      <ion-card-header color="danger">
+        <ion-card-title>
+          {{cupomAtual.nameCupom}}
+        </ion-card-title>
+        <ion-card-subtitle>
+          {{cupomAtual.price}}% de desconto
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <img src={{cupomAtual.img}} alt="">
+        <p>{{cupomAtual.detail}}</p>
+        <ion-item lines="none" color="warning">
+          <ion-label text-center expand="block">
+            {{cupomAtual.code}}
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card> 
+  </ion-list>
+</ion-content>

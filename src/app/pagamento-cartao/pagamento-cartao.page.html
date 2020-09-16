@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Cartão de {{typeOfCard}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card padding>
+    <ion-card-title>
+      Pagamento no {{typeOfCard}} efetuado com sucesso!
+    </ion-card-title>   
+    <img src="https://fredericocarvalho.pt/wp-content/uploads/2017/05/sign-check-icon.png" alt="">
+    <ion-card-subtitle text-center>
+        Até logo!
+      </ion-card-subtitle>
+  </ion-card>
+  <ion-button color="danger" expand="block" routerDirection="back" [routerLink]="['/tabs/menu']">
+    Voltar para menu
+  </ion-button>
+</ion-content>
